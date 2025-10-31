@@ -1,6 +1,7 @@
 {
   "name": "panhar-nangdy-lab1",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "repository": "https://github.com/nangdypanhar/panhar-nangdy-lab1.git",
   "author": "nangdypanhar <181545922+nangdypanhar@users.noreply.github.com>",
@@ -9,6 +10,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/express": "^5.0.5",
     "chai": "^6.2.0",
     "eslint": "8",
     "mocha": "^11.7.4",

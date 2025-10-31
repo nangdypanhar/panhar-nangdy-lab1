@@ -1,4 +1,5 @@
 name: Node.js CI (Yarn)
+
 on:
   push:
     branches: [ main ]
@@ -9,19 +10,19 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     strategy:
-       matrix:
+      matrix:
         node-version: [16.x, 18.x]
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.jsuses: actions/setup-node@v4
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
-        
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 

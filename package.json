@@ -1,0 +1,22 @@
+{
+  "name": "panhar-nangdy-lab1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nangdypanhar/panhar-nangdy-lab1.git",
+  "author": "nangdypanhar <181545922+nangdypanhar@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "chai": "^6.2.0",
+    "eslint": "8",
+    "mocha": "^11.7.4",
+    "supertest": "^7.1.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --exit",
+    "lint": "eslint . --ext .js"
+  }
+}

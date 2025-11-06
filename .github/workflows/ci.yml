@@ -40,3 +40,12 @@ jobs:
         with:
           name: coverage-report
           path: coverage
+
+      - name: Deploy to Vercel
+        if: success() #
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          prod: true
